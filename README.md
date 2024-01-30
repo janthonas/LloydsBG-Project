@@ -1,6 +1,6 @@
 # New Repo for Lloyds Banking Group Project
 ## Group Members
 - Diya
-- Jessie
+- Jack
 - Amaan
 - Jessie
