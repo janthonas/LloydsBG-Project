@@ -1,0 +1,1435 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='user_large_data' inline='true' name='federated.1eld0hh0pkyoab13q6ewi00qelax' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='user_large_data' name='textscan.0bokbkz11e82ic18dsidh0qyn40a'>
+            <connection class='textscan' directory='/Users/jessiebloom/OneDrive - University of Bristol/mini-project' filename='user_large_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0bokbkz11e82ic18dsidh0qyn40a' name='user_large_data.csv' table='[user_large_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='user_id' ordinal='0' />
+            <column datatype='integer' name='total_tx_count' ordinal='1' />
+            <column datatype='integer' name='net_tx_count' ordinal='2' />
+            <column datatype='real' name='total_tx_sum_gbp' ordinal='3' />
+            <column datatype='real' name='net_tx_sum_gbp' ordinal='4' />
+            <column datatype='integer' name='sent_tx_count' ordinal='5' />
+            <column datatype='real' name='sent_tx_sum_gbp' ordinal='6' />
+            <column datatype='real' name='sent_tx_mean_gbp' ordinal='7' />
+            <column datatype='real' name='sent_tx_median_gbp' ordinal='8' />
+            <column datatype='integer' name='received_tx_count' ordinal='9' />
+            <column datatype='real' name='received_tx_sum_gbp' ordinal='10' />
+            <column datatype='real' name='received_tx_mean_gbp' ordinal='11' />
+            <column datatype='real' name='received_tx_median_gbp' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0bokbkz11e82ic18dsidh0qyn40a' name='user_large_data.csv' table='[user_large_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='user_id' ordinal='0' />
+            <column datatype='integer' name='total_tx_count' ordinal='1' />
+            <column datatype='integer' name='net_tx_count' ordinal='2' />
+            <column datatype='real' name='total_tx_sum_gbp' ordinal='3' />
+            <column datatype='real' name='net_tx_sum_gbp' ordinal='4' />
+            <column datatype='integer' name='sent_tx_count' ordinal='5' />
+            <column datatype='real' name='sent_tx_sum_gbp' ordinal='6' />
+            <column datatype='real' name='sent_tx_mean_gbp' ordinal='7' />
+            <column datatype='real' name='sent_tx_median_gbp' ordinal='8' />
+            <column datatype='integer' name='received_tx_count' ordinal='9' />
+            <column datatype='real' name='received_tx_sum_gbp' ordinal='10' />
+            <column datatype='real' name='received_tx_mean_gbp' ordinal='11' />
+            <column datatype='real' name='received_tx_median_gbp' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[user_large_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[user_large_data.csv]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[user_large_data.csv_513348F06F6C4594A9A927E186B79A96]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_tx_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_tx_count]</local-name>
+            <parent-name>[user_large_data.csv]</parent-name>
+            <remote-alias>total_tx_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[user_large_data.csv_513348F06F6C4594A9A927E186B79A96]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>net_tx_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[net_tx_count]</local-name>
+            <parent-name>[user_large_data.csv]</parent-name>
+            <remote-alias>net_tx_count</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[user_large_data.csv_513348F06F6C4594A9A927E186B79A96]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_tx_sum_gbp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_tx_sum_gbp]</local-name>
+            <parent-name>[user_large_data.csv]</parent-name>
+            <remote-alias>total_tx_sum_gbp</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[user_large_data.csv_513348F06F6C4594A9A927E186B79A96]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>net_tx_sum_gbp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[net_tx_sum_gbp]</local-name>
+            <parent-name>[user_large_data.csv]</parent-name>
+            <remote-alias>net_tx_sum_gbp</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[user_large_data.csv_513348F06F6C4594A9A927E186B79A96]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sent_tx_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sent_tx_count]</local-name>
+            <parent-name>[user_large_data.csv]</parent-name>
+            <remote-alias>sent_tx_count</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[user_large_data.csv_513348F06F6C4594A9A927E186B79A96]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sent_tx_sum_gbp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sent_tx_sum_gbp]</local-name>
+            <parent-name>[user_large_data.csv]</parent-name>
+            <remote-alias>sent_tx_sum_gbp</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[user_large_data.csv_513348F06F6C4594A9A927E186B79A96]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sent_tx_mean_gbp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sent_tx_mean_gbp]</local-name>
+            <parent-name>[user_large_data.csv]</parent-name>
+            <remote-alias>sent_tx_mean_gbp</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[user_large_data.csv_513348F06F6C4594A9A927E186B79A96]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sent_tx_median_gbp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sent_tx_median_gbp]</local-name>
+            <parent-name>[user_large_data.csv]</parent-name>
+            <remote-alias>sent_tx_median_gbp</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[user_large_data.csv_513348F06F6C4594A9A927E186B79A96]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>received_tx_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[received_tx_count]</local-name>
+            <parent-name>[user_large_data.csv]</parent-name>
+            <remote-alias>received_tx_count</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[user_large_data.csv_513348F06F6C4594A9A927E186B79A96]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>received_tx_sum_gbp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[received_tx_sum_gbp]</local-name>
+            <parent-name>[user_large_data.csv]</parent-name>
+            <remote-alias>received_tx_sum_gbp</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[user_large_data.csv_513348F06F6C4594A9A927E186B79A96]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>received_tx_mean_gbp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[received_tx_mean_gbp]</local-name>
+            <parent-name>[user_large_data.csv]</parent-name>
+            <remote-alias>received_tx_mean_gbp</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[user_large_data.csv_513348F06F6C4594A9A927E186B79A96]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>received_tx_median_gbp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[received_tx_median_gbp]</local-name>
+            <parent-name>[user_large_data.csv]</parent-name>
+            <remote-alias>received_tx_median_gbp</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[user_large_data.csv_513348F06F6C4594A9A927E186B79A96]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='user_large_data.csv' datatype='table' name='[__tableau_internal_object_id__].[user_large_data.csv_513348F06F6C4594A9A927E186B79A96]' role='measure' type='quantitative' />
+      <column caption='Net Tx Count' datatype='integer' name='[net_tx_count]' role='measure' type='quantitative' />
+      <column caption='Net Tx Sum Gbp' datatype='real' name='[net_tx_sum_gbp]' role='measure' type='quantitative' />
+      <column caption='Received Tx Count' datatype='integer' name='[received_tx_count]' role='measure' type='quantitative' />
+      <column caption='Received Tx Mean Gbp' datatype='real' name='[received_tx_mean_gbp]' role='measure' type='quantitative' />
+      <column caption='Received Tx Median Gbp' datatype='real' name='[received_tx_median_gbp]' role='measure' type='quantitative' />
+      <column caption='Received Tx Sum Gbp' datatype='real' name='[received_tx_sum_gbp]' role='measure' type='quantitative' />
+      <column caption='Sent Tx Count' datatype='integer' name='[sent_tx_count]' role='measure' type='quantitative' />
+      <column caption='Sent Tx Mean Gbp' datatype='real' name='[sent_tx_mean_gbp]' role='measure' type='quantitative' />
+      <column caption='Sent Tx Median Gbp' datatype='real' name='[sent_tx_median_gbp]' role='measure' type='quantitative' />
+      <column caption='Sent Tx Sum Gbp' datatype='real' name='[sent_tx_sum_gbp]' role='measure' type='quantitative' />
+      <column caption='Total Tx Count' datatype='integer' name='[total_tx_count]' role='measure' type='quantitative' />
+      <column caption='Total Tx Sum Gbp' datatype='real' name='[total_tx_sum_gbp]' role='measure' type='quantitative' />
+      <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='user_large_data.csv' id='user_large_data.csv_513348F06F6C4594A9A927E186B79A96'>
+            <properties context=''>
+              <relation connection='textscan.0bokbkz11e82ic18dsidh0qyn40a' name='user_large_data.csv' table='[user_large_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='user_id' ordinal='0' />
+                  <column datatype='integer' name='total_tx_count' ordinal='1' />
+                  <column datatype='integer' name='net_tx_count' ordinal='2' />
+                  <column datatype='real' name='total_tx_sum_gbp' ordinal='3' />
+                  <column datatype='real' name='net_tx_sum_gbp' ordinal='4' />
+                  <column datatype='integer' name='sent_tx_count' ordinal='5' />
+                  <column datatype='real' name='sent_tx_sum_gbp' ordinal='6' />
+                  <column datatype='real' name='sent_tx_mean_gbp' ordinal='7' />
+                  <column datatype='real' name='sent_tx_median_gbp' ordinal='8' />
+                  <column datatype='integer' name='received_tx_count' ordinal='9' />
+                  <column datatype='real' name='received_tx_sum_gbp' ordinal='10' />
+                  <column datatype='real' name='received_tx_mean_gbp' ordinal='11' />
+                  <column datatype='real' name='received_tx_median_gbp' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='biz_large_df' inline='true' name='federated.02bisle10pu81z12gg1ar1jqcfir' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='biz_large_df' name='textscan.15vb9lz0doqhkz1b26eio0zmx7dh'>
+            <connection class='textscan' directory='/Users/jessiebloom/OneDrive - University of Bristol/mini-project/LloydsBG-Project/SavedData' filename='biz_large_df.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.15vb9lz0doqhkz1b26eio0zmx7dh' name='biz_large_df.csv' table='[biz_large_df#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='name' ordinal='0' />
+            <column datatype='integer' name='tx_count' ordinal='1' />
+            <column datatype='real' name='tx_sum_gbp' ordinal='2' />
+            <column datatype='real' name='tx_mean_gbp' ordinal='3' />
+            <column datatype='real' name='tx_median_gbp' ordinal='4' />
+            <column datatype='string' name='customers_sorted_unique' ordinal='5' />
+            <column datatype='string' name='customers_tx_count' ordinal='6' />
+            <column datatype='integer' name='unique_customers_count' ordinal='7' />
+            <column datatype='string' name='Transaction Volume Segment' ordinal='8' />
+            <column datatype='string' name='Revenue Segment' ordinal='9' />
+            <column datatype='string' name='Mean Transaction Value Segment' ordinal='10' />
+            <column datatype='string' name='Median Transaction Value Segment' ordinal='11' />
+            <column datatype='string' name='Customer Reach Segment' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.15vb9lz0doqhkz1b26eio0zmx7dh' name='biz_large_df.csv' table='[biz_large_df#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='name' ordinal='0' />
+            <column datatype='integer' name='tx_count' ordinal='1' />
+            <column datatype='real' name='tx_sum_gbp' ordinal='2' />
+            <column datatype='real' name='tx_mean_gbp' ordinal='3' />
+            <column datatype='real' name='tx_median_gbp' ordinal='4' />
+            <column datatype='string' name='customers_sorted_unique' ordinal='5' />
+            <column datatype='string' name='customers_tx_count' ordinal='6' />
+            <column datatype='integer' name='unique_customers_count' ordinal='7' />
+            <column datatype='string' name='Transaction Volume Segment' ordinal='8' />
+            <column datatype='string' name='Revenue Segment' ordinal='9' />
+            <column datatype='string' name='Mean Transaction Value Segment' ordinal='10' />
+            <column datatype='string' name='Median Transaction Value Segment' ordinal='11' />
+            <column datatype='string' name='Customer Reach Segment' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[biz_large_df.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[biz_large_df.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[biz_large_df.csv_9B691AFE4CC6456B9CBBBB25D9F6F462]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tx_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tx_count]</local-name>
+            <parent-name>[biz_large_df.csv]</parent-name>
+            <remote-alias>tx_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[biz_large_df.csv_9B691AFE4CC6456B9CBBBB25D9F6F462]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tx_sum_gbp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tx_sum_gbp]</local-name>
+            <parent-name>[biz_large_df.csv]</parent-name>
+            <remote-alias>tx_sum_gbp</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[biz_large_df.csv_9B691AFE4CC6456B9CBBBB25D9F6F462]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tx_mean_gbp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tx_mean_gbp]</local-name>
+            <parent-name>[biz_large_df.csv]</parent-name>
+            <remote-alias>tx_mean_gbp</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[biz_large_df.csv_9B691AFE4CC6456B9CBBBB25D9F6F462]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tx_median_gbp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tx_median_gbp]</local-name>
+            <parent-name>[biz_large_df.csv]</parent-name>
+            <remote-alias>tx_median_gbp</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[biz_large_df.csv_9B691AFE4CC6456B9CBBBB25D9F6F462]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customers_sorted_unique</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customers_sorted_unique]</local-name>
+            <parent-name>[biz_large_df.csv]</parent-name>
+            <remote-alias>customers_sorted_unique</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[biz_large_df.csv_9B691AFE4CC6456B9CBBBB25D9F6F462]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customers_tx_count</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customers_tx_count]</local-name>
+            <parent-name>[biz_large_df.csv]</parent-name>
+            <remote-alias>customers_tx_count</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[biz_large_df.csv_9B691AFE4CC6456B9CBBBB25D9F6F462]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unique_customers_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[unique_customers_count]</local-name>
+            <parent-name>[biz_large_df.csv]</parent-name>
+            <remote-alias>unique_customers_count</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[biz_large_df.csv_9B691AFE4CC6456B9CBBBB25D9F6F462]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction Volume Segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transaction Volume Segment]</local-name>
+            <parent-name>[biz_large_df.csv]</parent-name>
+            <remote-alias>Transaction Volume Segment</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[biz_large_df.csv_9B691AFE4CC6456B9CBBBB25D9F6F462]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue Segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Revenue Segment]</local-name>
+            <parent-name>[biz_large_df.csv]</parent-name>
+            <remote-alias>Revenue Segment</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[biz_large_df.csv_9B691AFE4CC6456B9CBBBB25D9F6F462]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean Transaction Value Segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Mean Transaction Value Segment]</local-name>
+            <parent-name>[biz_large_df.csv]</parent-name>
+            <remote-alias>Mean Transaction Value Segment</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[biz_large_df.csv_9B691AFE4CC6456B9CBBBB25D9F6F462]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median Transaction Value Segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Median Transaction Value Segment]</local-name>
+            <parent-name>[biz_large_df.csv]</parent-name>
+            <remote-alias>Median Transaction Value Segment</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[biz_large_df.csv_9B691AFE4CC6456B9CBBBB25D9F6F462]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Reach Segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer Reach Segment]</local-name>
+            <parent-name>[biz_large_df.csv]</parent-name>
+            <remote-alias>Customer Reach Segment</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[biz_large_df.csv_9B691AFE4CC6456B9CBBBB25D9F6F462]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Customer Reach Segment]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Mean Transaction Value Segment]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Median Transaction Value Segment]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Revenue Segment]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Transaction Volume Segment]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='biz_large_df.csv' datatype='table' name='[__tableau_internal_object_id__].[biz_large_df.csv_9B691AFE4CC6456B9CBBBB25D9F6F462]' role='measure' type='quantitative' />
+      <column caption='Customers Sorted Unique' datatype='string' name='[customers_sorted_unique]' role='dimension' type='nominal' />
+      <column caption='Customers Tx Count' datatype='string' name='[customers_tx_count]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Tx Count' datatype='integer' name='[tx_count]' role='measure' type='quantitative' />
+      <column caption='Tx Mean Gbp' datatype='real' name='[tx_mean_gbp]' role='measure' type='quantitative' />
+      <column caption='Tx Median Gbp' datatype='real' name='[tx_median_gbp]' role='measure' type='quantitative' />
+      <column caption='Tx Sum Gbp' datatype='real' name='[tx_sum_gbp]' role='measure' type='quantitative' />
+      <column-instance column='[Customer Reach Segment]' derivation='None' name='[none:Customer Reach Segment:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Mean Transaction Value Segment]' derivation='None' name='[none:Mean Transaction Value Segment:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Median Transaction Value Segment]' derivation='None' name='[none:Median Transaction Value Segment:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Revenue Segment]' derivation='None' name='[none:Revenue Segment:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Transaction Volume Segment]' derivation='None' name='[none:Transaction Volume Segment:nk]' pivot='key' type='nominal' />
+      <column-instance column='[tx_mean_gbp]' derivation='Sum' name='[sum:tx_mean_gbp:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[tx_median_gbp]' derivation='Sum' name='[sum:tx_median_gbp:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_mean_gbp:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.02bisle10pu81z12gg1ar1jqcfir]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_median_gbp:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Revenue Segment:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Upper-medium&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Low-medium&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Transaction Volume Segment:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Upper-medium&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Low-medium&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Customer Reach Segment:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Upper-medium&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Low-medium&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Median Transaction Value Segment:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Upper-medium&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Low-medium&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Mean Transaction Value Segment:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Upper-medium&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Low-medium&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='biz_large_df.csv' id='biz_large_df.csv_9B691AFE4CC6456B9CBBBB25D9F6F462'>
+            <properties context=''>
+              <relation connection='textscan.15vb9lz0doqhkz1b26eio0zmx7dh' name='biz_large_df.csv' table='[biz_large_df#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='name' ordinal='0' />
+                  <column datatype='integer' name='tx_count' ordinal='1' />
+                  <column datatype='real' name='tx_sum_gbp' ordinal='2' />
+                  <column datatype='real' name='tx_mean_gbp' ordinal='3' />
+                  <column datatype='real' name='tx_median_gbp' ordinal='4' />
+                  <column datatype='string' name='customers_sorted_unique' ordinal='5' />
+                  <column datatype='string' name='customers_tx_count' ordinal='6' />
+                  <column datatype='integer' name='unique_customers_count' ordinal='7' />
+                  <column datatype='string' name='Transaction Volume Segment' ordinal='8' />
+                  <column datatype='string' name='Revenue Segment' ordinal='9' />
+                  <column datatype='string' name='Mean Transaction Value Segment' ordinal='10' />
+                  <column datatype='string' name='Median Transaction Value Segment' ordinal='11' />
+                  <column datatype='string' name='Customer Reach Segment' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Businesses by transaction volume</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='biz_large_df' name='federated.02bisle10pu81z12gg1ar1jqcfir' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02bisle10pu81z12gg1ar1jqcfir'>
+            <column datatype='string' name='[Transaction Volume Segment]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[Transaction Volume Segment]' derivation='None' name='[none:Transaction Volume Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tx_count]' derivation='Sum' name='[sum:tx_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Tx Count' datatype='integer' name='[tx_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Transaction Volume Segment:nk]'>
+            <groupfilter function='level-members' level='[none:Transaction Volume Segment:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_count:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Transaction Volume Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Transaction Volume Segment:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_count:qk]</rows>
+        <cols>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]</cols>
+      </table>
+      <simple-id uuid='{A71CB4A6-B9DE-483A-8BD8-1305E3EBEF36}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Business Performance based on mean transaction</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='biz_large_df' name='federated.02bisle10pu81z12gg1ar1jqcfir' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02bisle10pu81z12gg1ar1jqcfir'>
+            <column datatype='string' name='[Mean Transaction Value Segment]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Median Transaction Value Segment]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[Mean Transaction Value Segment]' derivation='None' name='[none:Mean Transaction Value Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Median Transaction Value Segment]' derivation='None' name='[none:Median Transaction Value Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tx_mean_gbp]' derivation='Sum' name='[sum:tx_mean_gbp:qk]' pivot='key' type='quantitative' />
+            <column caption='Tx Mean Gbp' datatype='real' name='[tx_mean_gbp]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Mean Transaction Value Segment:nk]'>
+            <groupfilter function='level-members' level='[none:Mean Transaction Value Segment:nk]' />
+          </filter>
+          <filter class='categorical' column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Median Transaction Value Segment:nk]'>
+            <groupfilter function='level-members' level='[none:Median Transaction Value Segment:nk]' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_mean_gbp:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Median Transaction Value Segment:nk]</column>
+            <column>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Mean Transaction Value Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Mean Transaction Value Segment:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_mean_gbp:qk]</rows>
+        <cols>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]</cols>
+      </table>
+      <simple-id uuid='{73B79541-62CC-4E35-A5E2-EC6071300CF0}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>`Business performance based on median transaction</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='biz_large_df' name='federated.02bisle10pu81z12gg1ar1jqcfir' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02bisle10pu81z12gg1ar1jqcfir'>
+            <column datatype='string' name='[Median Transaction Value Segment]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[Median Transaction Value Segment]' derivation='None' name='[none:Median Transaction Value Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tx_median_gbp]' derivation='Sum' name='[sum:tx_median_gbp:qk]' pivot='key' type='quantitative' />
+            <column caption='Tx Median Gbp' datatype='real' name='[tx_median_gbp]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_median_gbp:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Median Transaction Value Segment:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_median_gbp:qk]</rows>
+        <cols>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]</cols>
+      </table>
+      <simple-id uuid='{DA267186-58B6-41F6-9ACA-A6BB2125D804}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Business performance based on revenue</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='biz_large_df' name='federated.02bisle10pu81z12gg1ar1jqcfir' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02bisle10pu81z12gg1ar1jqcfir'>
+            <column datatype='string' name='[Revenue Segment]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[Revenue Segment]' derivation='None' name='[none:Revenue Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tx_sum_gbp]' derivation='Sum' name='[sum:tx_sum_gbp:qk]' pivot='key' type='quantitative' />
+            <column caption='Tx Sum Gbp' datatype='real' name='[tx_sum_gbp]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_sum_gbp:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Revenue Segment:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_sum_gbp:qk]</rows>
+        <cols>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]</cols>
+      </table>
+      <simple-id uuid='{48417C78-FD7A-481C-9E1A-3A63B152B74A}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Business performance based on customer count</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='biz_large_df' name='federated.02bisle10pu81z12gg1ar1jqcfir' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02bisle10pu81z12gg1ar1jqcfir'>
+            <column datatype='string' name='[Customer Reach Segment]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[Customer Reach Segment]' derivation='None' name='[none:Customer Reach Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[unique_customers_count]' derivation='Sum' name='[sum:unique_customers_count:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[unique_customers_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]'>
+            <groupfilter function='level-members' level='[none:name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:unique_customers_count:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Customer Reach Segment:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:unique_customers_count:qk]</rows>
+        <cols>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]</cols>
+      </table>
+      <simple-id uuid='{3955EED3-49C8-43A5-98DD-221A63A0D085}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Business performance based on customer count</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='biz_large_df' name='federated.02bisle10pu81z12gg1ar1jqcfir' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02bisle10pu81z12gg1ar1jqcfir'>
+            <column datatype='string' name='[Customer Reach Segment]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Mean Transaction Value Segment]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Median Transaction Value Segment]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Revenue Segment]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Transaction Volume Segment]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[Customer Reach Segment]' derivation='None' name='[none:Customer Reach Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Mean Transaction Value Segment]' derivation='None' name='[none:Mean Transaction Value Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Median Transaction Value Segment]' derivation='None' name='[none:Median Transaction Value Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Revenue Segment]' derivation='None' name='[none:Revenue Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction Volume Segment]' derivation='None' name='[none:Transaction Volume Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tx_count]' derivation='Sum' name='[sum:tx_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tx_mean_gbp]' derivation='Sum' name='[sum:tx_mean_gbp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tx_median_gbp]' derivation='Sum' name='[sum:tx_median_gbp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tx_sum_gbp]' derivation='Sum' name='[sum:tx_sum_gbp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[unique_customers_count]' derivation='Sum' name='[sum:unique_customers_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Tx Count' datatype='integer' name='[tx_count]' role='measure' type='quantitative' />
+            <column caption='Tx Mean Gbp' datatype='real' name='[tx_mean_gbp]' role='measure' type='quantitative' />
+            <column caption='Tx Median Gbp' datatype='real' name='[tx_median_gbp]' role='measure' type='quantitative' />
+            <column caption='Tx Sum Gbp' datatype='real' name='[tx_sum_gbp]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[unique_customers_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]'>
+            <groupfilter function='level-members' level='[none:name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:unique_customers_count:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:unique_customers_count:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Customer Reach Segment:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_count:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Transaction Volume Segment:nk]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_mean_gbp:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Mean Transaction Value Segment:nk]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_median_gbp:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Median Transaction Value Segment:nk]' />
+            </encodings>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_sum_gbp:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Revenue Segment:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.02bisle10pu81z12gg1ar1jqcfir].[sum:unique_customers_count:qk] + ([federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_count:qk] + ([federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_mean_gbp:qk] + ([federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_median_gbp:qk] + [federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_sum_gbp:qk]))))</rows>
+        <cols>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]</cols>
+      </table>
+      <simple-id uuid='{024FC2CA-CFD5-4FB7-B689-7C1C51A4A597}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Business performance based on customer count</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='biz_large_df' name='federated.02bisle10pu81z12gg1ar1jqcfir' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02bisle10pu81z12gg1ar1jqcfir'>
+            <column datatype='string' name='[Customer Reach Segment]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Mean Transaction Value Segment]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Median Transaction Value Segment]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Revenue Segment]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Transaction Volume Segment]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[Customer Reach Segment]' derivation='None' name='[none:Customer Reach Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Mean Transaction Value Segment]' derivation='None' name='[none:Mean Transaction Value Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Median Transaction Value Segment]' derivation='None' name='[none:Median Transaction Value Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Revenue Segment]' derivation='None' name='[none:Revenue Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction Volume Segment]' derivation='None' name='[none:Transaction Volume Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tx_count]' derivation='Sum' name='[sum:tx_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tx_mean_gbp]' derivation='Sum' name='[sum:tx_mean_gbp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tx_median_gbp]' derivation='Sum' name='[sum:tx_median_gbp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tx_sum_gbp]' derivation='Sum' name='[sum:tx_sum_gbp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[unique_customers_count]' derivation='Sum' name='[sum:unique_customers_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Tx Count' datatype='integer' name='[tx_count]' role='measure' type='quantitative' />
+            <column caption='Tx Mean Gbp' datatype='real' name='[tx_mean_gbp]' role='measure' type='quantitative' />
+            <column caption='Tx Median Gbp' datatype='real' name='[tx_median_gbp]' role='measure' type='quantitative' />
+            <column caption='Tx Sum Gbp' datatype='real' name='[tx_sum_gbp]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[unique_customers_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Customer Reach Segment:nk]'>
+            <groupfilter function='level-members' level='[none:Customer Reach Segment:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Mean Transaction Value Segment:nk]'>
+            <groupfilter function='level-members' level='[none:Mean Transaction Value Segment:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Median Transaction Value Segment:nk]'>
+            <groupfilter function='level-members' level='[none:Median Transaction Value Segment:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Revenue Segment:nk]'>
+            <groupfilter function='level-members' level='[none:Revenue Segment:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Transaction Volume Segment:nk]'>
+            <groupfilter function='level-members' level='[none:Transaction Volume Segment:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]'>
+            <groupfilter function='level-members' level='[none:name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]</column>
+            <column>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Customer Reach Segment:nk]</column>
+            <column>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Mean Transaction Value Segment:nk]</column>
+            <column>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Revenue Segment:nk]</column>
+            <column>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Median Transaction Value Segment:nk]</column>
+            <column>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Transaction Volume Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:unique_customers_count:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Customer Reach Segment:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_mean_gbp:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Mean Transaction Value Segment:nk]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_sum_gbp:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Revenue Segment:nk]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_median_gbp:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Median Transaction Value Segment:nk]' />
+            </encodings>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_count:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Transaction Volume Segment:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]</rows>
+        <cols>([federated.02bisle10pu81z12gg1ar1jqcfir].[sum:unique_customers_count:qk] + ([federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_mean_gbp:qk] + ([federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_sum_gbp:qk] + ([federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_median_gbp:qk] + [federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_count:qk]))))</cols>
+      </table>
+      <simple-id uuid='{91E88E1C-0C7F-48E2-A9F0-EA93C54BCA72}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='biz_large_df' name='federated.02bisle10pu81z12gg1ar1jqcfir' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02bisle10pu81z12gg1ar1jqcfir'>
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tx_mean_gbp]' derivation='Sum' name='[sum:tx_mean_gbp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tx_median_gbp]' derivation='Sum' name='[sum:tx_median_gbp:qk]' pivot='key' type='quantitative' />
+            <column caption='Tx Mean Gbp' datatype='real' name='[tx_mean_gbp]' role='measure' type='quantitative' />
+            <column caption='Tx Median Gbp' datatype='real' name='[tx_median_gbp]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02bisle10pu81z12gg1ar1jqcfir].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_median_gbp:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_mean_gbp:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.02bisle10pu81z12gg1ar1jqcfir].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_median_gbp:qk]&quot;</bucket>
+              <bucket>&quot;[federated.02bisle10pu81z12gg1ar1jqcfir].[sum:tx_mean_gbp:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.02bisle10pu81z12gg1ar1jqcfir].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02bisle10pu81z12gg1ar1jqcfir].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk] / [federated.02bisle10pu81z12gg1ar1jqcfir].[:Measure Names])</rows>
+        <cols>[federated.02bisle10pu81z12gg1ar1jqcfir].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{05378FB6-90F4-47D7-96D4-D24AC7812491}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Transaction Volume Segment:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Transaction Volume Segment:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9C081DDB-4934-4430-B405-FCBF7D2FE2E7}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Mean Transaction Value Segment:nk]' type='filter' />
+            <card param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Median Transaction Value Segment:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Mean Transaction Value Segment:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5A4458E2-22F7-43B5-B054-DF2E365DD29B}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Median Transaction Value Segment:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0AC835E7-AFC5-4D25-A818-56C703012BBE}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Revenue Segment:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7F7F6ED3-8DC6-4E7F-BBB1-F3FC4C154DF8}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Customer Reach Segment:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{051A6717-7840-4F6F-A350-48B67C3D2AAF}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]' type='filter' />
+            <card pane-specification-id='2' param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Transaction Volume Segment:nk]' type='color' />
+            <card pane-specification-id='4' param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Median Transaction Value Segment:nk]' type='color' />
+            <card pane-specification-id='5' param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Revenue Segment:nk]' type='color' />
+            <card pane-specification-id='3' param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Mean Transaction Value Segment:nk]' type='color' />
+            <card pane-specification-id='1' param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Customer Reach Segment:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{220D10AA-A334-43A7-A94A-BB628DFE9569}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='216'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Transaction Volume Segment:nk]' size='30' type='filter' />
+            <card param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Median Transaction Value Segment:nk]' size='30' type='filter' />
+            <card param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Revenue Segment:nk]' size='30' type='filter' />
+            <card param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Mean Transaction Value Segment:nk]' size='31' type='filter' />
+            <card param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Customer Reach Segment:nk]' size='31' type='filter' />
+            <card param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:name:nk]' size='62' type='filter' />
+            <card pane-specification-id='1' param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Customer Reach Segment:nk]' type='color' />
+            <card pane-specification-id='2' param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Mean Transaction Value Segment:nk]' type='color' />
+            <card pane-specification-id='3' param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Revenue Segment:nk]' type='color' />
+            <card pane-specification-id='4' param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Median Transaction Value Segment:nk]' type='color' />
+            <card pane-specification-id='5' param='[federated.02bisle10pu81z12gg1ar1jqcfir].[none:Transaction Volume Segment:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8F87D4FB-EDF2-4395-B71F-87F99A5D5BEE}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02bisle10pu81z12gg1ar1jqcfir].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0D8E763A-AA29-49D0-8508-0FA01653FE36}' />
+    </window>
+  </windows>
+</workbook>
